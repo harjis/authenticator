@@ -25,10 +25,10 @@ spec:
             - name: OKTA_CLIENTID
               valueFrom:
                 secretKeyRef:
-                  name: oktaClientId
+                  name: oktaclientid
                   key: OKTA_CLIENTID
             - name: OKTA_ISSUER
               valueFrom:
                 secretKeyRef:
-                  name: oktaIssuer
+                  name: oktaissuer
                   key: OKTA_ISSUER

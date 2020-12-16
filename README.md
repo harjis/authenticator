@@ -10,8 +10,8 @@ backendPort: 3000
 
 2. Create secrets for okta
 ```shell script
-kubectl create secret generic oktaClientId --from-literal OKTA_CLIENTID=my-id
-kubectl create secret generic oktaIssuer --from-literal OKTA_ISSUER=my-issuer
+kubectl create secret generic oktaclientid --from-literal OKTA_CLIENTID=my-id
+kubectl create secret generic oktaissuer --from-literal OKTA_ISSUER=my-issuer
 ```
 
 3. Install authenticator with
