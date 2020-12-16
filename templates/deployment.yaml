@@ -6,15 +6,15 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      {{- include "authenticator.selectorLabels" . | nindent 6 }}
+      component: authenticator-server
   template:
     metadata:
       labels:
-        {{- include "authenticator.selectorLabels" . | nindent 8 }}
+        component: authenticator-server
     spec:
       containers:
         - name: {{ .Chart.Name }}
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          image: d0rka/users-authenticator
           ports:
             - containerPort: 5000
           env:
