@@ -1,3 +1,14 @@
 apiVersion: v1
-entries: {}
-generated: "2020-12-16T05:11:11.108023+02:00"
+entries:
+  authenticator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-01-13T13:37:00.726946+02:00"
+    description: A Helm chart for Kubernetes
+    digest: c484ee6550fad90f6ca2cabe51b721720178fb6bd2f30a69cf38d81ee222b7db
+    name: authenticator
+    type: application
+    urls:
+    - https://harjis.github.io/authenticator/authenticator-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-01-13T13:37:00.725106+02:00"
