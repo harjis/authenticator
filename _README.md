@@ -14,12 +14,17 @@ kubectl create secret generic oktaclientid --from-literal OKTA_CLIENTID=my-id
 kubectl create secret generic oktaissuer --from-literal OKTA_ISSUER=my-issuer
 ```
 
-3. Install authenticator with
+3. Add helm repo
+```shell script
+helm repo add authenticator https://harjis.github.io/authenticator/
+```
+
+4. Install authenticator with
 ````shell script
 helm install authenticator authenticator -f authenticator_values.yaml
 ````
 
-4. Route all backend trafic through the authenticator:
+5. Route all backend trafic through the authenticator:
 
 ```
 apiVersion: networking.k8s.io/v1
